@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+class Car {
+public:
+    string brand;
+    int price;
+
+    Car(string b, int p) {
+        brand = b; price = p;
+    }
+};
+
+int main() {
+    Car c1("BMW", 5000000);
+    cout << "Brand: " << c1.brand << ", Price: " << c1.price;
+    return 0;
+}
