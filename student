@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    int roll;
+    int marks;
+
+    Student(int r, int m) {
+        roll = r; marks = m;
+    }
+
+    void display() {
+        cout << "Roll: " << roll << ", Marks: " << marks << endl;
+    }
+};
+
+int main() {
+    Student s1(1, 85);
+    Student s2(2, 90);
+    Student s3(3, 75);
+
+    s1.display();
+    s2.display();
+    s3.display();
+
+    return 0;
+}
