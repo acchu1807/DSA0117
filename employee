@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+class Employee {
+public:
+    string name;
+    int salary;
+
+    Employee(string n, int s) {
+        name = n; salary = s;
+    }
+
+    void show() {
+        cout << "Employee: " << name << ", Salary: " << salary << endl;
+    }
+};
+
+int main() {
+    Employee e1("Arun", 40000);
+    e1.show();
+    return 0;
+}
