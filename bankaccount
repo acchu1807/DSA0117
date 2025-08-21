@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+class BankAccount {
+public:
+    int accNo;
+    int balance;
+
+    BankAccount(int a=0, int b=0) {
+        accNo = a;
+        balance = b;
+    }
+};
+
+int main() {
+    BankAccount b1;          
+    BankAccount b2(123, 5000);
+
+    cout << "Account 1 -> " << b1.accNo << ", Balance = " << b1.balance << endl;
+    cout << "Account 2 -> " << b2.accNo << ", Balance = " << b2.balance << endl;
+    return 0;
+}
