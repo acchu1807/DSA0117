@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Book {
+public:
+    string title;
+    int price;
+
+   
+    Book(string t, int p) {
+        title = t;
+        price = p;
+    }
+
+   
+    Book(Book &b) {
+        title = b.title;
+        price = b.price;
+    }
+};
+
+int main() {
+    Book b1("C++ Basics", 300);  
+    Book b2(b1);                  
+
+    cout << "Book 1 -> " << b1.title << ", Price = " << b1.price << endl;
+    cout << "Book 2 -> " << b2.title << ", Price = " << b2.price << endl;
+
+    return 0;
+}
