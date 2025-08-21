@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+public:
+    int length, breadth;
+
+    Rectangle(int l, int b) {
+        length = l;
+        breadth = b;
+    }
+};
+
+class Box {
+public:
+    int length, width, height;
+
+    Box() { length = width = height = 1; }         
+    Box(int side) { length = width = height = side; } 
+    Box(int l, int w, int h) { length = l; width = w; height = h; } 
+};
+
+int main() {
+    Rectangle r1(5, 3);
+    cout << "Rectangle Area = " << r1.length * r1.breadth << endl;
+
+    Box b1;
+    Box b2(4);
+    Box b3(2, 3, 6);
+
+    cout << "Box1 Volume = " << b1.length * b1.width * b1.height << endl;
+    cout << "Box2 Volume = " << b2.length * b2.width * b2.height << endl;
+    cout << "Box3 Volume = " << b3.length * b3.width * b3.height << endl;
+
+    return 0;
+}
+
